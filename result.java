@@ -28,7 +28,7 @@ public class result {
         misMarks = myObj.nextInt();
 
         percent = (pythonMarks + dbmsMarks + osMarks + webtechMarks + adsMarks + misMarks)/6.0f;
-        System.out.println("Your Percentage : "+percent);
+        System.out.println("Your Percentage : " + Math.round(percent*100)/100f);
 
         if (percent >= 91){
         grade = 'A';            
@@ -53,7 +53,7 @@ public class result {
         remark="Fail";
         }
 
-        System.out.println("Your Grade is : "+grade);
-        System.out.println("Remark : "+remark);
+        System.out.println("Your Grade is : " + grade);
+        System.out.println("Remark : " + remark);
     }
 }
